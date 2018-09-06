@@ -1,5 +1,6 @@
 .container-fluid{
     padding: 0px;
+    min-width: 1300px;
 }
 .slideBox {
     width: 100%;
@@ -9,21 +10,26 @@
     /* border: 1px solid #ddd; */
     box-sizing: border-box;
 }
-
-.slideBox .hd {
-    height: 22.32%;
-    width: 100%;
-    overflow: hidden;
+.slideBox .mengban{
+    background: rgba(0, 0, 0, 0.46);
     position: absolute;
     right: 0px;
     bottom: 0px;
+    width: 100%;
+    z-index: 1;
+}
+.slideBox .hd {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
     z-index: 1;
 }
 
 .slideBox .hd ul {
     margin: 0px auto;
     height: 100%;
-    width: 77.6%;
+    max-width: 1490px;
+    width: 100%;
     overflow: hidden;
     zoom: 1;
     /* float: left; */
@@ -33,9 +39,8 @@
 
 .slideBox .hd ul li {
     float: left;
-    height: 100%;
-    line-height: 14px;
-    padding: 1.4%;
+    padding: 20px;
+    height: 150px;
     cursor: pointer;
 }
 .slideBox .hd ul li .fonthead{
@@ -43,18 +48,18 @@
 	font-stretch: normal;
 	letter-spacing: 0px;
     color: #ffffff;
-    font-size: 1.5rem;
+    font-size: 24px;
     display: block;
 }
 .slideBox .hd ul li .fonttext{
     display: block;
-    margin-top: 0.8rem;
+    margin-top: 2px;
     font-weight: normal;
 	font-stretch: normal;
 	line-height: 200%;
 	letter-spacing: 0px;
     color: #e6e6e6;
-    font-size: 1.125rem;
+    font-size: 17px;
 }
 .slideBox .nav-box{
     width: 20%;
@@ -142,8 +147,13 @@
 
 /* 第二个轮播 */
 .slick-2{
-    width: 77.6%;
+    max-width: 1490px;
+    width: 100%;
     margin: 0px auto;
+    margin-top: 39px;
+}
+.mengbanslick{
+    background-color: #1e1e1e;
 }
 .slick-2 div img{
     display: block;
@@ -160,9 +170,9 @@
     background: transparent;
     width: 3.75rem;
 }
-.slick-prev{
+/* .slick-prev{
    
-}
+} */
 .slick-next{
     right: 0px;
     top: 0px;
@@ -186,29 +196,21 @@
     z-index: 8;
 }
 
-@media (min-width: 1500px) {
-  
+
+@media(max-width: 1400px) {
     
-  }
-/* 
-  ##PC
-  ##1350px- 1500px或更高分辨率
-*/
-@media (min-width: 1400px) {
-  
-  
-    
-  }
-  
-  /* 
-  ##PC
-  ##1100px- 1350px
-*/
-@media (min-width: 1100px) and (max-width: 1400px) {
-  
-    
+    .slick-2{
+        margin-top: 30px;
+    }
+    .slideBox .hd ul li .fonthead{
+        font-size: 19px;
+    }
     .slideBox .hd ul li .fonttext{
-        line-height: 180%;
+        font-size: 15px;
+    }
+    .slideBox .hd ul li {
+        height: 120px;
+        padding: 15px;
     }
   }
   /* 
@@ -216,36 +218,5 @@
     ##1025px - 1350px
   */
   
-  @media (min-width: 1025px) and (max-width: 1100px) {
-    
-    
-    .slideBox .hd ul li .fonttext{
-        line-height: 120%;
-    }
-  }
-  
-  /* 
-    ##平板电脑/Ipad竖屏
-    ##768px - 1024px
-  */
-  
-  @media (min-width: 768px) and (max-width: 1024px) {
-    
-    .slideBox .hd ul li .fonttext{
-        line-height: 120%;
-    }
-    
-  }
-  
-  /* 
-    ##平板电脑或Ipad横屏
-    ##768px - 1024px
-  */
-  
-  @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
-    
-    .slideBox .hd ul li .fonttext{
-        line-height: 120%;
-    }
-    
-  }
+
+ 
