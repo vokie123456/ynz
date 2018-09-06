@@ -18,6 +18,7 @@
 </head>
 <body>
     <div class="container-fluid">
+        <!-- 第一个轮播 -->
         <div id="slideBox" class="slideBox">
             
             <div class="hd">
@@ -81,11 +82,58 @@
             <a class="next" href="javascript:void(0)"></a>
         
         </div>
-        
+        <!-- 第二个轮播 -->
+        <div class="picScroll-left">
+			<div class="hd">
+				<a class="next">
+                    <img src="img/index/next.png" alt="">
+                </a>
+				<!-- <ul></ul> -->
+				<a class="prev">
+                    <img src="img/index/prev.png" alt="">
+                </a>
+				<!-- <span class="pageState"></span> -->
+			</div>
+			<div class="bd">
+				<ul class="picList">
+					<li>
+						<div class="pic"><a href="javascript:;" target="_blank"><img src="img/index/lun1.png" /></a></div>
+						<div class="title"><a href="javascript:;" target="_blank">效果图1</a></div>
+					</li>
+					<li>
+						<div class="pic"><a href="javascript:;" target="_blank"><img src="img/index/lun2.png" /></a></div>
+						<div class="title"><a href="javascript:;" target="_blank">效果图2</a></div>
+					</li>
+					<li>
+						<div class="pic"><a href="javascript:;" target="_blank"><img src="img/index/lun3.png" /></a></div>
+						<div class="title"><a href="javascript:;" target="_blank">效果图3</a></div>
+					</li>
+					<li>
+						<div class="pic"><a href="javascript:;" target="_blank"><img src="img/index/lun4.png" /></a></div>
+						<div class="title"><a href="javascript:;" target="_blank">效果图4</a></div>
+					</li>
+					<li>
+						<div class="pic"><a href="javascript:;" target="_blank"><img src="img/index/lun5.png" /></a></div>
+						<div class="title"><a href="javascript:;" target="_blank">效果图5</a></div>
+                    </li>
+                    <li>
+						<div class="pic"><a href="javascript:;" target="_blank"><img src="img/index/lun4.png" /></a></div>
+						<div class="title"><a href="javascript:;" target="_blank">效果图6</a></div>
+					</li>
+					<li>
+						<div class="pic"><a href="javascript:;" target="_blank"><img src="img/index/lun5.png" /></a></div>
+						<div class="title"><a href="javascript:;" target="_blank">效果图7</a></div>
+					</li>
+					
+				</ul>
+			</div>
+		</div>
     </div>
     <script type="text/javascript">
-		jQuery(".slideBox").slide({mainCell:".bd ul",autoPlay:false,effect:'fold'});
-		</script>
+        jQuery(".slideBox").slide({ mainCell: ".bd ul", autoPlay: false, effect: 'fold' });
+        jQuery(".picScroll-left").slide({ titCell: ".hd ul", mainCell: ".bd ul", autoPage: true, effect: "leftLoop", autoPlay: false, vis: 5, easing: "easeOutCirc" });
+        
+    </script>
     
 </body>
 </html>

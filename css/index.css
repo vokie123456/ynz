@@ -140,6 +140,107 @@
     display: none;
 }
 
+/* 第二个轮播 */
+.picScroll-left {
+    width: 77.864%;
+    overflow: hidden;
+    position: relative;
+    margin: 0px auto;
+    margin-top: 2.4375rem;
+}
+
+.picScroll-left .hd {
+    overflow: hidden;
+    width: 20%;
+    position: relative;
+}
+
+.picScroll-left .hd .prev,
+.picScroll-left .hd .next {
+    display: block;
+    width: 20%;
+    
+    overflow: hidden;
+    cursor: pointer;
+    font-size: 0px;
+    position: absolute;
+}
+
+.picScroll-left .hd .next img{
+    width: 100%;
+}
+.picScroll-left .hd .prev img{
+    width: 100%;
+}
+/* .picScroll-left .hd .prevStop {
+    background: url(img/index/ne.png);
+}
+
+.picScroll-left .hd .nextStop {
+    background-position: -60px -50px;
+} */
+
+.picScroll-left .hd ul {
+    float: right;
+    overflow: hidden;
+    zoom: 1;
+    margin-top: 10px;
+    zoom: 1;
+}
+
+/* .picScroll-left .hd ul li {
+    float: left;
+    width: 9px;
+    height: 9px;
+    overflow: hidden;
+    margin-right: 5px;
+    text-indent: -999px;
+    cursor: pointer;
+    background: url("images/icoCircle.gif") 0 -9px no-repeat;
+} */
+
+.picScroll-left .hd ul li.on {
+    background-position: 0 0;
+}
+
+.picScroll-left .bd {
+   
+    width: 100%;
+}
+.picScroll-left .bd .tempWrap{
+    width: 100% !important;
+}
+
+.picScroll-left .bd ul {
+    overflow: hidden;
+    zoom: 1;
+}
+
+.picScroll-left .bd ul li {
+    float: left;
+    _display: inline;
+    overflow: hidden;
+    text-align: center;
+    width: 20%;
+}
+
+.picScroll-left .bd ul li .pic {
+    text-align: center;
+}
+
+.picScroll-left .bd ul li .pic img {
+    width: 100%;
+    display: block;
+}
+
+.picScroll-left .bd ul li .pic a:hover img {
+    border-color: #999;
+}
+
+.picScroll-left .bd ul li .title {
+    line-height: 24px;
+}
+
 @media (min-width: 1500px) {
   
     
