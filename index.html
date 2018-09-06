@@ -5,14 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="js/bootstrap-3.3.7-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="js/slick/slick.css">
     <link rel="stylesheet" href="css/public.css">
     <link rel="stylesheet" href="css/index.css">
-    <script src="js/jquery1.42.min.js"></script>
-    <script src="js/jquery.SuperSlide.2.1.1.js"></script>
     <script src="js/imsky-holder-8220898/holder.min.js"></script>
     <title>首页</title>
     <style>
-        
+       
     </style>
     
 </head>
@@ -83,56 +82,51 @@
         
         </div>
         <!-- 第二个轮播 -->
-        <div class="picScroll-left">
-			<div class="hd">
-				<a class="next">
-                    <img src="img/index/next.png" alt="">
-                </a>
-				<!-- <ul></ul> -->
-				<a class="prev">
-                    <img src="img/index/prev.png" alt="">
-                </a>
-				<!-- <span class="pageState"></span> -->
-			</div>
-			<div class="bd">
-				<ul class="picList">
-					<li>
-						<div class="pic"><a href="javascript:;" target="_blank"><img src="img/index/lun1.png" /></a></div>
-						<div class="title"><a href="javascript:;" target="_blank">效果图1</a></div>
-					</li>
-					<li>
-						<div class="pic"><a href="javascript:;" target="_blank"><img src="img/index/lun2.png" /></a></div>
-						<div class="title"><a href="javascript:;" target="_blank">效果图2</a></div>
-					</li>
-					<li>
-						<div class="pic"><a href="javascript:;" target="_blank"><img src="img/index/lun3.png" /></a></div>
-						<div class="title"><a href="javascript:;" target="_blank">效果图3</a></div>
-					</li>
-					<li>
-						<div class="pic"><a href="javascript:;" target="_blank"><img src="img/index/lun4.png" /></a></div>
-						<div class="title"><a href="javascript:;" target="_blank">效果图4</a></div>
-					</li>
-					<li>
-						<div class="pic"><a href="javascript:;" target="_blank"><img src="img/index/lun5.png" /></a></div>
-						<div class="title"><a href="javascript:;" target="_blank">效果图5</a></div>
-                    </li>
-                    <li>
-						<div class="pic"><a href="javascript:;" target="_blank"><img src="img/index/lun4.png" /></a></div>
-						<div class="title"><a href="javascript:;" target="_blank">效果图6</a></div>
-					</li>
-					<li>
-						<div class="pic"><a href="javascript:;" target="_blank"><img src="img/index/lun5.png" /></a></div>
-						<div class="title"><a href="javascript:;" target="_blank">效果图7</a></div>
-					</li>
-					
-				</ul>
-			</div>
-		</div>
+        <div class="slick-2">
+                
+            <div>
+                <img src="img/index/lun1.png" alt="">
+            </div>
+            <div>
+                <img src="img/index/lun2.png" alt="">
+            </div>
+            <div>
+                <img src="img/index/lun3.png" alt="">
+            </div>
+            <div>
+                <img src="img/index/lun4.png" alt="">
+            </div>
+            <div>
+                <img src="img/index/lun5.png" alt="">
+            </div>
+            <div>
+                <img src="img/index/lun4.png" alt="">
+            </div>
+            <div>
+                <img src="img/index/lun3.png" alt="">
+            </div>
+        </div>
     </div>
+    
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/slick/slick.min.js"></script>
     <script type="text/javascript">
-        jQuery(".slideBox").slide({ mainCell: ".bd ul", autoPlay: false, effect: 'fold' });
-        jQuery(".picScroll-left").slide({ titCell: ".hd ul", mainCell: ".bd ul", autoPage: true, effect: "leftLoop", autoPlay: false, vis: 5, easing: "easeOutCirc" });
-        
+        var $331 = $;
+        $331(document).ready(function(){
+          $331('.slick-2').slick({
+                dots: false,
+                infinite: true,
+                slidesToShow: 5,
+                slidesToScroll: 1,
+            });
+            $331('.slick-prev,.slick-next').text('');
+        });
+      </script>
+    <script src="js/jquery1.42.min.js"></script>
+    <script src="js/jquery.SuperSlide.2.1.1.js"></script>
+    <script type="text/javascript">
+        var $190 = $;
+        $190(".slideBox").slide({ mainCell: ".bd ul", autoPlay: false, effect: 'fold' });
     </script>
     
 </body>
