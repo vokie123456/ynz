@@ -10,3 +10,28 @@ body{
 ul{
     margin-bottom: 0px;
 }
+
+/* div遮罩样式 */
+.mask-wrapper{
+    position: relative;
+    overflow: hidden;
+  }
+
+  .mask-inner {
+    position: absolute;
+    left: 0;
+    top: 100%;
+    width: 100%;
+    height: 100%;
+    -moz-transition: top ease 0ms;
+    -o-transition: top ease 0ms;
+    -webkit-transition: top ease 0ms;
+    transition: top ease 0ms;
+  }
+
+  .mask-wrapper:hover .mask-inner {
+    top:0;
+  }
+   .mask-inner{
+    background: rgba(0, 0, 0, 0.88);
+  }

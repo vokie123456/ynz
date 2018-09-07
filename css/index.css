@@ -283,11 +283,27 @@
     font-size: 18px;
     color: #ff4800;
 }
+
+
+/* task  CSS */
+.task .logo,.pic,.answer,.article,.forum,.share{
+    height: 50%;
+}
 .task{
     width: 1200px;
-    height: 476px;
+    height: auto;
     margin: 0px auto;
     margin-top: 40px;
+    position: relative;
+}
+.task img{
+    width: 75%;
+}
+.task .box{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0px;
 }
 .task::after{
     display: block;
@@ -299,6 +315,7 @@
     height: 100%;
     float: left;
 }
+
 html{
     font-size: 16px;
 }
@@ -308,7 +325,7 @@ body {
 }
 @media (max-width: 1789px){
     body {
-        min-width: 1580px;
+        min-width: 1549px;
     }
     .slideBox .hd ul{
         max-width: 1380px;
@@ -318,7 +335,7 @@ body {
     }
 }
 
-@media (max-width: 1549px){
+@media (max-width: 1570px){
     html{
         font-size: 15px;
     }

@@ -126,7 +126,7 @@
                     <img src="img/index/buzou1.png" alt="">
                 </li>
                 <li>
-                    <img src="img/index/num1.png" alt="">
+                    <img src="img/index/num2.png" alt="">
                     <div>
                         <span>完成任务</span>
                         <span>获得赏金</span>
@@ -136,7 +136,7 @@
                     <img src="img/index/buzou1.png" alt="">
                 </li>
                 <li>
-                    <img src="img/index/num1.png" alt="">
+                    <img src="img/index/num3.png" alt="">
                     <div>
                         <span>赏金提现</span>
                         <span>10000赏金等于1元</span>
@@ -151,27 +151,34 @@
             </ul>
         </div>
         <div class="task">
-            <div class="taskitem">
-                <div class="logo">
-
+            <img src="img/index/task.png" alt="">
+                <div class="box">
+                    <div class="taskitem">
+                        <div class="logo mask-wrapper">
+                            <div class="mask-inner">
+                                <p>foo bar</p>
+                            </div>
+                        </div>
+                        <div class="pic">
+                
+                        </div>
+                    </div>
+                    <div class="taskitem">
+                        <div class="answer"></div>
+                        <div class="article"></div>
+                    </div>
+                    <div class="taskitem">
+                        <div class="forum"></div>
+                        <div class="share"></div>
+                    </div>
+                
+                    <div class="taskitem rank-list">4</div>
                 </div>
-                <div class="ans">
-
-                </div>
-            </div>
-            <div class="taskitem">
-                <div></div>
-                <div></div>
-            </div>
-            <div class="taskitem">
-                <div></div>
-                <div></div>
-            </div>
-            <div class="taskitem">4</div>
         </div>
     </div>
     
     <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/layui/layui.js"></script>
     <script src="js/slick/slick.min.js"></script>
     <script type="text/javascript">
         var $331 = $;
@@ -183,6 +190,13 @@
                 slidesToScroll: 1,
             });
             $331('.slick-prev,.slick-next').text('');
+            
+            layui.use('layer', function () {
+                var layer = layui.layer;
+
+                layer.msg('hello');
+                
+            });              
         });
       </script>
     <script src="js/jquery1.42.min.js"></script>
