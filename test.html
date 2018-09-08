@@ -48,6 +48,15 @@
            .mask-inner{
               background: rgba(0, 0, 0, 0.5);
             }
+
+            /* 多个选择 */
+            .kk1,.kk2,.kk3{
+              height: 100px;
+              width: 100px;
+            }
+            .kk1,.kk2,.kk3 span:hover{
+               background: red;
+            }
     </style>
 </head>
 <body>
@@ -62,6 +71,9 @@
                   <p>foo bar</p>
                 </div>
               </div>
+              <div class="kk1"><span>1</span></div>
+              <div class="kk2"><span>2</span></div>
+              <div class="kk3"><span>3</span></div>
               <script type="text/javascript">
                 $(document).ready(function(){
                   $('.your-class').slick();

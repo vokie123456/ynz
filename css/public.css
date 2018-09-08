@@ -23,15 +23,31 @@ ul{
     top: 100%;
     width: 100%;
     height: 100%;
-    -moz-transition: top ease 0ms;
-    -o-transition: top ease 0ms;
-    -webkit-transition: top ease 0ms;
-    transition: top ease 0ms;
+    background: rgba(0, 0, 0, 0.88);
+    position: relative;
+    -moz-transition: top ease 300ms;
+    -o-transition: top ease 300ms;
+    -webkit-transition: top ease 300ms;
+    transition: top ease 300ms;
   }
 
   .mask-wrapper:hover .mask-inner {
     top:0;
   }
-   .mask-inner{
-    background: rgba(0, 0, 0, 0.88);
-  }
+ 
+  .mask-inner::after{
+    width: 8rem;
+	height: 3rem;
+    border: solid 1px #ffffff;
+    font-size: 1rem;
+    color: #ffffff;
+    line-height: 3rem;
+    text-align: center;
+    display: block;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-left: -4rem;
+    margin-top: -1.5rem;
+    content: '查看详情';
+}

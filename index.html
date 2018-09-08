@@ -68,10 +68,10 @@
             <div class="bd">
                 <ul>
                     <li><a href="javascript:;" target="_blank"><img src="img/index/banner.png" /></a></li>
+                    <li><a href="javascript:;" target="_blank"><img src="img/index/banner2.png" /></a></li>
+                    <li><a href="javascript:;" target="_blank"><img src="img/index/banner3.png" /></a></li>
                     <li><a href="javascript:;" target="_blank"><img src="img/index/banner.png" /></a></li>
-                    <li><a href="javascript:;" target="_blank"><img src="img/index/banner.png" /></a></li>
-                    <li><a href="javascript:;" target="_blank"><img src="img/index/banner.png" /></a></li>
-                    <li><a href="javascript:;" target="_blank"><img src="img/index/banner.png" /></a></li>
+                    <li><a href="javascript:;" target="_blank"><img src="img/index/banner2.png" /></a></li>
                 </ul>
             </div>
         
@@ -155,21 +155,51 @@
                 <div class="box">
                     <div class="taskitem">
                         <div class="logo mask-wrapper">
-                            <div class="mask-inner">
-                                <p>foo bar</p>
+                            <div class="mask-inner"></div>
+                            <div class="mask-default">
+                                <span>LOGO设计</span>
+                                <span>根据商家要求设计</span>
                             </div>
                         </div>
-                        <div class="pic">
-                
+                        <div class="pic mask-wrapper">
+                            <div class="mask-inner"></div>
+                            <div class="mask-default">
+                                <span>图片制作</span>
+                                <span>根据商家要求定制图片</span>
+                            </div>
                         </div>
                     </div>
                     <div class="taskitem">
-                        <div class="answer"></div>
-                        <div class="article"></div>
+                        <div class="answer mask-wrapper">
+                            <div class="mask-inner"></div>
+                            <div class="mask-default">
+                                <span>百度问答</span>
+                                <span>创建一问一答的简单任务</span>
+                            </div>
+                        </div>
+                        <div class="article mask-wrapper">
+                            <div class="mask-inner"></div>
+                            <div class="mask-default">
+                                <span>文案编写</span>
+                                <span>根据商家要求撰写文案</span>
+                            </div>
+                        </div>
                     </div>
                     <div class="taskitem">
-                        <div class="forum"></div>
-                        <div class="share"></div>
+                        <div class="forum mask-wrapper">
+                            <div class="mask-inner"></div>
+                            <div class="mask-default">
+                                <span>论坛发帖</span>
+                                <span>协助商家在论坛发帖</span>
+                            </div>
+                        </div>
+                        <div class="share mask-wrapper">
+                            <div class="mask-inner"></div>
+                            <div class="mask-default">
+                                <span>分享网站</span>
+                                <span>帮助推广宝赚的简单任务</span>
+                            </div>
+                        </div>
                     </div>
                 
                     <div class="taskitem rank-list">4</div>
@@ -193,10 +223,10 @@
             
             layui.use('layer', function () {
                 var layer = layui.layer;
-
-                layer.msg('hello');
-                
-            });              
+            }); 
+            $('.task .logo,.pic,.answer,.article,.forum,.share').click(function () {
+                layer.msg('hello!')
+            })             
         });
       </script>
     <script src="js/jquery1.42.min.js"></script>
