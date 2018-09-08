@@ -341,11 +341,14 @@
     background: rgba(0, 0, 0, 0.61);
 }
 .pic .mask-default{
-    background: rgba(0, 0, 0, 0.2);
+    background: rgba(255, 255, 255, 0.6);
 }
 .article .mask-default{
     background: rgba(0, 0, 0, 0.74);
 }
+.share .mask-default{
+    background: rgba(255, 255, 255, 0.4);    
+ }
 .mask-wrapper:hover .mask-default{
     top: -100%;
 }
@@ -379,6 +382,84 @@
 }
 .taskitem:nth-child(2n+1) .mask-wrapper:nth-child(2) span:nth-child(2){
     color: #000000;
+}
+
+/* 排行榜css */
+.rank-list .table{
+    font-size: 0.8rem;
+    border-collapse:collapse;
+    border:none;
+}
+.rank-list .table tr{
+    height: 2.3rem;
+    width: 18.8rem;
+    box-sizing: border-box;
+    border: none !important;
+}
+.rank-list .table th{
+    font-weight: normal;
+    vertical-align: middle;
+    color: #000000;
+    background-color: #f4f5f9;
+    border-top: 1px solid #e5e5e5 !important;
+    border-bottom: 1px solid #e5e5e5;
+    padding: 1px;
+    text-align: center;
+}
+.rank-list .table th:nth-child(1){
+    text-align: center;
+    height: 2.5rem;
+    font-size: 1rem;
+    background-color: #f4f5f9;
+}
+.rank-list .table tr td:nth-child(1){
+    text-align: center;
+}
+.rank-list .table tr td:nth-child(3){
+    padding-left: 15px;
+}
+.rank-list .table tr td:nth-child(4){
+    color: #e02423;
+}
+.rank-list .table td{
+    text-align: center;
+    color: #000000;
+    position: relative;
+    padding: 1px;
+    line-height: 100% !important;
+    vertical-align: middle;
+    border: none;
+}
+.rank-list .table td span::after{
+    display: inline-block;
+    content: '';
+    width: 0.7rem;
+    height: 0.7rem;
+    background: url(../img/index/gold.png) no-repeat;
+    background-size: 100% 100%;
+}
+.rank-list .table tr:nth-child(1) td:nth-child(1){
+
+    background: url(../img/index/rank1.png) center center no-repeat;
+    background-size: 1.5rem 1.5rem;
+    color: #ffffff;
+    
+}
+.rank-list .table tr:nth-child(2) td:nth-child(1){
+    background: url(../img/index/rank2.png) center center no-repeat;
+    background-size: 1.5rem 1.5rem;
+    color: #ffffff;
+}
+.rank-list .table tr:nth-child(3) td:nth-child(1){
+    background: url(../img/index/rank3.png) center center no-repeat;
+    background-size: 1.5rem 1.5rem;
+    color: #ffffff;
+}
+.rank-list tbody tr:nth-child(2n+1){
+    background-color: #ffffff;
+}
+.rank-list tbody tr:nth-child(2n+2){
+    background-color: #f4f5f9;
 }
 html{
     font-size: 16px;
