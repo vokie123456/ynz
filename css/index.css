@@ -1,6 +1,45 @@
 .container-fluid{
     padding: 0px;
 }
+.slideBox .login{
+    position: absolute;
+    right: 3.125%;
+    top: 3.5%;
+    z-index: 10;
+    color: #000000;
+    width: 7rem;
+	height: 2.6rem;
+    display: flex;
+    align-items: center;
+    border-radius: 1.3rem;
+    background-color: #ffe405;
+}
+.slideBox .login li{
+    width: 50%;
+    font-size: 1rem;
+    height: 1rem;
+    line-height: 1rem;
+    text-align: center;
+    padding: 0px 10px;
+    position: relative;
+}
+.slideBox .login li:nth-child(1)::after{
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    width: 2px;
+    background: #000000;
+    height: 100%;
+}
+.slideBox .logo{
+    position: absolute;
+    z-index: 10;
+    top: 0px;
+    width: 10%;
+    margin-left: 19.37%;
+}
 .slideBox {
     width: 100%;
     height: auto;
@@ -49,6 +88,9 @@
     color: #ffffff;
     font-size: 24px;
     display: block;
+}
+.slideBox .hd ul .on .fonthead{
+    color: #ffe405 !important;
 }
 .slideBox .hd ul li .fonttext{
     display: block;
@@ -119,17 +161,23 @@
     top: 50%;
     margin-top: -25px;
     display: block;
-    width: 32px;
-    height: 40px;
-    
+    width: 2%;
+    height: 10.4%;
     background-size: 100% 100%;
-    filter: alpha(opacity=50);
+    opacity: 0.5;
 }
+
 .slideBox .prev{
     background: url(../img/index/left.png) center center no-repeat;
 }
+.slideBox .prev:hover{
+    background: url(../img/index/left2.png) center center no-repeat;
+}
 .slideBox .next{
     background: url(../img/index/right.png) center center no-repeat;
+}
+.slideBox .next:hover{
+    background: url(../img/index/right2.png) center center no-repeat;
 }
 .slideBox .next {
     left: auto;
@@ -157,6 +205,7 @@
     width: 100%;
     margin: 0px auto;
     margin-top: 39px;
+    color: #ffffff;
 }
 .mengbanslick{
     background-color: #1e1e1e;
@@ -201,7 +250,78 @@
 #kk{
     z-index: 8;
 }
-
+.slick-2 div{
+    position: relative;
+    height: 100%;
+}
+.slick-2 .contai-box{
+    position: absolute;
+    z-index: 5;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    text-align: center;
+}
+.slick-2 .contai-box img{
+    width: 33.33%;
+    margin: 0 auto;
+    margin-top: 37.9%;
+    margin-bottom: 10%;
+}
+.slick-2 .contai-box p{
+    width: 100%;
+    font-size: 1.9rem;
+    line-height: 1.9rem;
+}
+.slick-2 .contai-box p::before{
+    content: '';
+    display: block;
+    margin: 0 auto;
+    width: 16.66%;
+    height: 0.25rem;
+    margin-bottom: 10%;
+    background: #ffffff;
+}
+.slick-2 .contai-box:hover p::before{
+    display: none;
+}
+.slick-2 .contai-box span{
+    font-size: 0.9rem;
+    line-height: 1.4rem;
+    letter-spacing: 0.2rem;
+    margin-top: 12%;
+    display: none;
+    padding: 0px 11.66%;
+    
+}
+.slick-2 .contai-box:hover span{
+    display: block;
+}
+.slick-2 .contai-box:hover{
+    background: rgba(255, 228, 5, 0.7);
+}
+.slick-2 .enter{
+    position: absolute;
+    z-index: 10;
+    bottom: 0px;
+    width: 100%;
+    height: 11.4%;
+    background: rgba(0, 0, 0, 0.6); 
+}
+.slick-2 .enter span{
+    width: 6.8rem;
+    height: 1.1rem;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-left: -3.4rem;
+    margin-top: -0.55rem;
+    font-size: 1.4rem;
+    color: #fefefe;
+    line-height: 1.1rem;
+}
 /* 步骤 */
 .buzhou{
     width: 1200px;
@@ -314,6 +434,7 @@
     width: 25%;
     height: 100%;
     float: left;
+    position: relative;
 }
 .mask-default{
     height: 100%;
@@ -414,6 +535,7 @@
 }
 .rank-list .table tr td:nth-child(1){
     text-align: center;
+    padding: 0px 15px;
 }
 .rank-list .table tr td:nth-child(3){
     padding-left: 15px;
@@ -461,6 +583,63 @@
 .rank-list tbody tr:nth-child(2n+2){
     background-color: #f4f5f9;
 }
+.rank-list .rank-foot{
+    width: 100%;
+	height: 2.5rem;
+    background-color: #ffffff;
+    position: absolute;
+    bottom: 0px;
+    text-align: center;
+    line-height: 2.5rem;
+    font-size: 1rem;
+    color: #000000;
+}
+/* seo css */
+.seo-box{
+    width: 1200px;
+    height: auto;
+    margin: 0px auto;
+    margin-top: 40px;
+    position: relative;
+    color: #000000;
+    text-align: center;
+}
+.seo-box img{
+    width: 100%;
+    height: auto;
+}
+.seo-box .title{
+    display: block;
+    font-size: 1.5rem;
+    text-align: center;
+    margin-bottom: 0.1rem;
+}
+.seo-box .more{
+    position: absolute;
+    right: 0px;
+    font-size: 1.3rem;
+}
+.seo-box p:nth-child(2)::after{
+    content: '';
+    display: block;
+    width: 12.5rem;
+	height: 0.1rem;
+    background-color: #000000;
+    margin: 0 auto;
+}
+.seo-box p:nth-child(2){
+    font-size: 1.3rem;
+    letter-spacing: 0.4rem;
+    line-height: 200%;
+    margin: 1rem 0px;
+}
+.seo-box p:nth-child(3){
+    font-size: 1.1rem;
+    line-height: 2.1rem;
+    letter-spacing: 0.3rem;
+    margin-bottom: 2.5rem;
+}
+
 html{
     font-size: 16px;
 }
@@ -511,6 +690,10 @@ body {
     }
 
     .task{
+        width: 1000px;
+        margin-top: 30px;
+    }
+    .seo-box{
         width: 1000px;
         margin-top: 30px;
     }
